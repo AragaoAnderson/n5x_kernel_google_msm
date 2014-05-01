@@ -65,6 +65,8 @@ static int __init cpufreq_read_arg_maxscroff(char *max_so)
      	return 1;
 }
 
+__setup("max_so=", cpufreq_read_arg_maxscroff);
+
 static int set_cpu_freq(struct cpufreq_policy *policy, unsigned int new_freq)
 {
 	int ret = 0;
