@@ -28,7 +28,7 @@ export CCACHE_LOGFILE=./tmp/ccache.log
 
 . ./setup.sh ${1} || exit 1;
 
-config=cyanogen_mako_defconfig
+config=n5x_defconfig
 
 export KERNEL_CONFIG="$config";
 
